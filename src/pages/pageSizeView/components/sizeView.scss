@@ -1,0 +1,20 @@
+size-view {
+    img.flag {
+        width: 2em;
+    }
+    .item-size {
+        .label-md {
+            margin: 0;
+        }
+
+        p{
+            font-size: 1.3rem;
+            white-space: pre-wrap;
+        }
+    }
+
+    .input-wrapper .label-md{
+        text-align: left;
+        min-height: 1.5em;
+    }
+}

@@ -1,0 +1,151 @@
+{
+  "MENU": {
+    "HOME": "Home",
+    "SIZEFORM": "Cadastro de medidas",
+    "QUICKSEARCH": "Consulta rápida",
+    "SETTINGS": "Configurações",
+    "ABOUT": "Sobre"
+  },
+  "HOME": {
+    "TITLE": "Tamanhos cadastrados",
+    "CARDTITLE": "Medidas",
+    "MESSAGE": "Encontre medidas de roupas e calçados nos padrões do Brasil, Estados Unidos e Europa.",
+    "TOUCHMESSAGE": "Arraste para visualizar os tamanhos"
+  },
+  "SIZES": {
+    "SELECT_TYPES": {
+      "KIDS": "Crianças",
+      "MEN": "Homem",
+      "WOMAN": "Mulher"
+    },
+    "SELECT_KIDS": {
+      "SIMPLE": "Comum",
+      "CLOTHES": "Roupas",
+      "SHOES": "Sapatos"
+    },
+    "SELECT_MEN": {
+      "SHIRTS": "Camisas",
+      "SHOES": "Sapatos",
+      "TSHIRTS": "Camisetas",
+      "SUITS": "Ternos"
+    },
+    "SELECT_WOMAN": {
+      "BLOUSES": "Blusas",
+      "COATS": "Casacos",
+      "DRESSES": "Vestidos",
+      "SHIRTS": "Camisetas",
+      "SHOES": "Sapatos",
+      "SKIRTS": "Saias"
+    }
+  },
+  "SEARCH": {
+    "TITLE": "Consulta rápida",
+    "CAPTION_SELECT_TYPE": "Tipo",
+    "CAPTION_SELECT_CLOTHING": "Vestuário",
+    "CAPTION_SELECT_SIZES": "Tamanhos",
+    "BUTTON_BACK": "Voltar"
+  },
+  "SIZEFORM": {
+    "TITLE": "Cadastro de medidas",
+    "FIELDS": {
+      "NAME": "Informe o nome da pessoa",
+      "TYPE": "Qual é o tipo?",
+      "NAME_PLACEHOLDER": "Nome"
+    },
+    "BUTTONS": {
+      "NEXT": "Próximo",
+      "SAVE": "Salvar",
+      "BACK": "Voltar"
+    },
+    "ALERTS": {
+      "TIP": "Os tamanhos são opcionais, somente os dados preenchidos serão convertidos",
+      "VALIDATIONERROR": {
+        "title": "Inválido",
+        "message": "Oops, dados inválidos"
+      },
+      "SUCCESS": {
+        "title": "Sucesso!",
+        "message": "O tamanho foi cadastrado com sucesso!"
+      },
+      "ERROR": {
+        "title": "Erro ao cadastrar!",
+        "message": "Ocorreu um erro ao cadastrar o tamanho!"
+      }
+    }
+  },
+  "SIZE": {
+    "TITLE": "Medidas cadastradas",
+    "ALERTS": {
+      "GRIDEMPTY": "Nenhuma medida cadastrada",
+      "DELETE": {
+        "title": "Deseja excluir o tamanho?",
+        "message": "Excluir Tamanho"
+      }
+    },
+    "BUTTONS": {
+      "NEW": "Novo",
+      "BACK": "Voltar",
+      "EDIT": "Editar",
+      "DELETE": "Excluir"
+    }
+  },
+  "SIZEVIEW": {
+    "TITLE": "Medidas",
+    "BUTTONS": {
+      "BACK": "Voltar",
+      "EDIT": "Editar"
+    },
+    "CONVERTLABELS": {
+      "KIDS": {
+        "SIMPLE": "Comum",
+        "SHOES": "Sapatos",
+        "CLOTHES": "Roupas"
+      },
+      "MEN": {
+        "SIMPLE": "Comum",
+        "SHOES": "Sapatos",
+        "SHIRTS": "Camisas",
+        "SUITS": "Ternos"
+      },
+      "WOMEN": {
+        "SIMPLE": "Comum",
+        "BLOUSES": "Blusas",
+        "COATS": "Casacos",
+        "DRESSES": "Vestidos",
+        "SKIRTS": "Saias",
+        "SHOES": "Sapatos"
+      }
+    }
+  },
+  "SETTINGS": {
+    "LANG": "Idioma",
+    "SOURCE": "Origem",
+    "LANGS": {
+      "PT": "Português",
+      "EN": "Inglês"
+    },
+    "SOURCES": {
+      "BRL": "Brasil",
+      "USA": "Estados Unidos",
+      "EUR": "Europa"
+    },
+    "ALERTS": {
+      "UPDATE": {
+        "title": "Atualização",
+        "message": "Configurações atualizadas com sucesso!"
+      },
+      "ERROR": {
+        "title": "Erro",
+        "message": "Erro ao executar transação!"
+      }
+    },
+    "BUTTONS": {
+      "SAVE": "Atualizar",
+      "BACK": "Voltar"
+    }
+  },
+  "ABOUT": {
+    "TITLE": "Sobre",
+    "MESSAGE": "Obrigado pelo download, por favor avalie o aplicativo!"
+  }
+}

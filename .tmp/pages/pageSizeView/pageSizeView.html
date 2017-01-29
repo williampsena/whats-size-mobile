@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'SIZEVIEW.TITLE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-grid>
+      <size-view [(entity)]="model.entity"></size-view>
+      <ion-row>
+        <ion-col width-100>
+          <button ion-button color="danger" type="button" block icon-left (click)="goHome()">
+            <ion-icon name="return-left"></ion-icon>
+            {{ 'SIZEVIEW.BUTTONS.BACK' | translate }}
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

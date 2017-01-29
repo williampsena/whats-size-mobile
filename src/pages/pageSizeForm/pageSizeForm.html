@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'SIZEFORM.TITLE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form *ngIf="model.isLoaded">
+    <ion-slides #pageSlider>
+      <ion-slide>
+        <ion-grid>
+          <ion-row>
+            <ion-col width-100>
+              <h5>{{ 'SIZEFORM.FIELDS.NAME' | translate }}</h5>
+              <ion-input type="text" name="personName" [(ngModel)]="model.name" placeholder="{{ 'SIZEFORM.FIELDS.NAME_PLACEHOLDER' | translate }}"
+                required minlength="3" maxlength="100"></ion-input>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col width-100>
+              <h5>{{ 'SIZEFORM.FIELDS.TYPE' | translate }}</h5>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col width-100>
+              <ion-list radio-group [(ngModel)]="model.type" name="type" (ngModelChange)="onChangeType($event)" required>
+                <ion-item *ngFor="let opt of options.types">
+                  <ion-label>{{ opt.text | translate }}</ion-label>
+                  <ion-radio value="{{opt.value}}" checked></ion-radio>
+                </ion-item>
+              </ion-list>
+              <button ion-button green type="button" block (click)="goToSlide(1)">{{ 'SIZEFORM.BUTTONS.NEXT' | translate }}</button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide>
+        <ion-grid>
+          <ion-row>
+            <ion-col width-100>
+              <h5>{{ 'SIZEFORM.ALERTS.TIP' | translate }}</h5>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col width-100>
+              <ion-list>
+                <ion-item *ngFor="let field of model.fields.selected">
+                  <ion-label>{{ field.text | translate }}</ion-label>
+                  <ion-select [(ngModel)]="field.value" name="{{field.key}}">
+                    <ion-option *ngFor="let opt of field.options" [value]="opt">{{opt}}</ion-option>
+                  </ion-select>
+                </ion-item>
+                <ion-item>
+                  <button ion-button type="button" block icon-left (click)="createOrUpdateSize()">
+                  <ion-icon name="calculator"></ion-icon>
+                  {{ 'SIZEFORM.BUTTONS.SAVE' | translate }}
+                </button>
+                  <button ion-button color="danger" type="button" block icon-left (click)="goToSlide(0)">
+                  <ion-icon name="return-left"></ion-icon>
+                  {{ 'SIZEFORM.BUTTONS.BACK' | translate }}
+                </button>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+
+        </ion-grid>
+      </ion-slide>
+    </ion-slides>
+  </form>
+</ion-content>

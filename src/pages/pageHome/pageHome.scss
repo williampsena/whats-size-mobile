@@ -1,0 +1,24 @@
+page-pageHome {
+    ion-card img {
+        min-width: 30em;
+        margin: 0 auto;
+    }
+    ion-slides {
+        height: auto;
+        ion-list {
+            overflow-y: scroll;
+        }
+    }
+    img.flag {
+        width: 2em;
+    }
+    .item-size {
+        .label-md {
+            margin: 0;
+        }
+        p {
+            font-size: 1.3rem;
+            white-space: pre-wrap;
+        }
+    }
+}

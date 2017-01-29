@@ -1,0 +1,38 @@
+<div>
+    <ion-grid *ngIf="model.isLoaded">
+        <ion-row>
+            <ion-col width-100>
+                <ion-item>
+                    <ion-icon [name]="model.sizeTypeIcon" item-left large></ion-icon>
+                    <h2>{{model.entity.personName}}</h2>
+                    <p item-right>
+                        <button ion-button outline item-right icon-left small color="primary" type="button" (click)="editSize(model.entity)">
+                <ion-icon name="open"></ion-icon>
+                {{ 'SIZEVIEW.BUTTONS.EDIT' | translate }}
+              </button>
+                    </p>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row class="padding">
+            <ion-col width-100>
+                <ion-list *ngFor="let sizes of model.convertedSize">
+                    <ion-list-header>
+                        {{ sizes.key | translate }}
+                    </ion-list-header>
+                    <ion-item class="item-size">
+                        <ion-row>
+                            <ion-col width-30 *ngFor="let size of sizes.value">
+                                <ion-item>
+                                    <img [src]="size.flag" class="flag" item-left large />
+                                    <h5>{{size.text}}</h5>
+                                    <p>{{size.value}}</p>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</div>

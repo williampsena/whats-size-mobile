@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar id="toolbar" color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Configurações</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-100>
+        <ion-list>
+          <ion-item>
+            <ion-label fixed>{{'SETTINGS.LANG' | translate}}</ion-label>
+            <ion-select [(ngModel)]="model.lang">
+              <ion-option value="pt">{{'SETTINGS.LANGS.PT' | translate}}</ion-option>
+              <ion-option value="en">{{'SETTINGS.LANGS.EN' | translate}}</ion-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label fixed>{{'SETTINGS.SOURCE' | translate}}</ion-label>
+            <ion-select [(ngModel)]="model.source">
+              <ion-option value="brl">{{'SETTINGS.SOURCES.BRL' | translate}}</ion-option>
+              <ion-option value="eur">{{'SETTINGS.SOURCES.EUR' | translate}}</ion-option>
+              <ion-option value="usa">{{'SETTINGS.SOURCES.USA' | translate}}</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-100>
+        <ion-list>
+          <ion-item>
+            <button ion-button type="button" block icon-left (click)="updateSettings()">
+            <ion-icon name="ios-checkmark-circle"></ion-icon>
+            {{'SETTINGS.BUTTONS.SAVE' | translate}}
+          </button>
+            <button ion-button color="danger" type="button" block icon-left (click)="goHome()">
+            <ion-icon name="return-left"></ion-icon>
+            {{'SETTINGS.BUTTONS.BACK' | translate}}
+          </button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

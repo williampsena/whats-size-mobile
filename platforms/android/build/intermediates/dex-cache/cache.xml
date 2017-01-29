@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/willisena/workspace/github/whats-size-mobile/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/release/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffd0e162684ee2bff872c546975d7af404a53208">
+        <dex dex="/home/willisena/workspace/github/whats-size-mobile/platforms/android/build/intermediates/pre-dexed/release/CordovaLib-unspecified-release_b45b8a27c75e8058eea4dcc45c8cbe33971448e0.jar" />
+    </item>
+
+</items>

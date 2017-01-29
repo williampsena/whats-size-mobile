@@ -1,0 +1,1 @@
+{"version":3,"file":"global.js","sourceRoot":"","sources":["../src/global.ts"],"names":[],"mappings":"","sourcesContent":["declare var require: {\n    <T>(path: string): T;\n    (paths: string[], callback: (...modules: any[]) => void): void;\n    ensure: (paths: string[], callback: (require: <T>(path: string) => T) => void) => void;\n};\n"]}

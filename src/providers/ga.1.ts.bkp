@@ -1,0 +1,58 @@
+import { Injectable } from "@angular/core";
+
+@Injectable()
+export class GoogleAnalyticsProvider {
+  private helper: GoogleAnalyticsBase;
+
+  constructor() {
+    this.helper = (<any>window).ga? new GoogleAnalytics() : new GoogleAnalyticsBase();
+  }
+
+  trackView(pageName: string) {
+    this.helper.trackView(pageName);
+  }
+
+  trackEvent(category: string, action: string, label: string, value: any) {
+    this.helper.trackEvent(category, action, label, value);
+  }
+
+  trackException(message: string, fatal: boolean = false){
+    this.helper.trackException(message, fatal);
+  }
+}
+
+class GoogleAnalyticsBase {
+  trackView(pageName: string) {
+    console.error(new Error("GA not implemented"));
+  }
+
+  trackEvent(category: string, action: string, label: string, value: any) {
+    console.error(new Error("GA not implemented"));
+  }
+
+  trackException(message: string, fatal: boolean = false){
+    console.error(new Error("GA not implemented"));
+  }
+}
+
+class GoogleAnalytics extends GoogleAnalyticsBase {
+  private ga: any;
+
+  constructor() {
+    super();
+    this.ga = (<any>window).ga || function(){};
+    this.ga.startTrackerWithId("UA-89357517-1");
+  }
+
+  trackView(pageName: string) {
+    this.ga.trackView(pageName);
+  }
+
+  trackEvent(category: string, action: string, label: string, value: any) {
+    this.ga.trackEvent(category, action, label, value);
+  }
+
+  trackException(message: string, fatal: boolean = false){
+    this.ga.trackException(message, fatal);
+  }
+}

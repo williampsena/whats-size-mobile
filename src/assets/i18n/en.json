@@ -1,0 +1,151 @@
+{
+  "MENU": {
+    "HOME": "Home",
+    "SIZEFORM": "Size registered",
+    "QUICKSEARCH": "Quick search",
+    "SETTINGS": "Settings",
+    "ABOUT": "About"
+  },
+  "HOME": {
+    "TITLE": "Sizes registered",
+    "CARDTITLE": "Sizes",
+    "MESSAGE": "Find clothes and shoes sizes in Brazil, United States and Europe standards.",
+    "TOUCHMESSAGE": "Swipe to see the sizes"
+  },
+  "SIZES": {
+    "SELECT_TYPES": {
+      "KIDS": "Kids",
+      "MEN": "Men",
+      "WOMAN": "Woman"
+    },
+    "SELECT_KIDS": {
+      "SIMPLE": "Simple",
+      "CLOTHES": "Clothes",
+      "SHOES": "Shoes"
+    },
+    "SELECT_MEN": {
+      "SHIRTS": "Shirts",
+      "SHOES": "Shoes",
+      "TSHIRTS": "TShirts",
+      "SUITS": "Suits"
+    },
+    "SELECT_WOMAN": {
+      "BLOUSES": "Blouses",
+      "COATS": "Coats",
+      "DRESSES": "Dresses",
+      "SHIRTS": "Shirts",
+      "SHOES": "Shoes",
+      "SKIRTS": "Skirts"
+    }
+  },
+  "SEARCH": {
+    "TITLE": "Quick search",
+    "CAPTION_SELECT_TYPE": "Type",
+    "CAPTION_SELECT_CLOTHING": "Clothing",
+    "CAPTION_SELECT_SIZES": "Sizes",
+    "BUTTON_BACK": "Go home"
+  },
+  "SIZEFORM": {
+    "TITLE": "Size form",
+    "FIELDS": {
+      "NAME": "Input the person name",
+      "TYPE": "What's the type?",
+      "NAME_PLACEHOLDER": "Name"
+    },
+    "BUTTONS": {
+      "NEXT": "Next",
+      "SAVE": "Updated",
+      "BACK": "Go home"
+    },
+    "ALERTS": {
+      "TIP": "The sizes are optionals, only fields filled will be converted",
+      "VALIDATIONERROR": {
+        "title": "Invalid",
+        "message": "Oops, data are invalid!"
+      },
+      "SUCCESS": {
+        "title": "Success!",
+        "message": "The size was saved with success!"
+      },
+      "ERROR": {
+        "title": "Error!",
+        "message": "An error occurred while attempting save size!"
+      }
+    }
+  },
+  "SIZE": {
+    "TITLE": "Size registered",
+    "ALERTS": {
+      "GRIDEMPTY": "Any size was found",
+      "DELETE": {
+        "title": "Delete",
+        "message": "Are you sure to delete?"
+      }
+    },
+    "BUTTONS": {
+      "NEW": "New",
+      "BACK": "Go home",
+      "EDIT": "Edit",
+      "DELETE": "Delete"
+    }
+  },
+  "SIZEVIEW": {
+    "TITLE": "Sizes",
+    "BUTTONS": {
+      "BACK": "Go home",
+      "EDIT": "Edit"
+    },
+    "CONVERTLABELS": {
+      "KIDS": {
+        "SIMPLE": "Simple",
+        "SHOES": "Shoes",
+        "CLOTHES": "Clothes"
+      },
+      "MEN": {
+        "SIMPLE": "Simple",
+        "SHOES": "Shoes",
+        "SHIRTS": "Shirts",
+        "SUITS": "Suits"
+      },
+      "WOMEN": {
+        "SIMPLE": "Simple",
+        "BLOUSES": "Blouses",
+        "COATS": "Coats",
+        "DRESSES": "Dresses",
+        "SKIRTS": "Skirts",
+        "SHOES": "Shoes"
+      }
+    }
+  },
+  "SETTINGS": {
+    "LANG": "Language",
+    "SOURCE": "Source",
+    "LANGS": {
+      "PT": "Portuguese",
+      "EN": "English"
+    },
+    "SOURCES": {
+      "BRL": "Brazil",
+      "USA": "United States",
+      "EUR": "Europe"
+    },
+    "ALERTS": {
+      "UPDATE": {
+        "title": "Updated",
+        "message": "Settings updated with success!"
+      },
+      "ERROR": {
+        "title": "Error",
+        "message": "Error on execute transaction!"
+      }
+    },
+    "BUTTONS": {
+      "SAVE": "Save",
+      "BACK": "Go home"
+    }
+  },
+  "ABOUT": {
+    "TITLE": "About",
+    "MESSAGE": "Thank you for downloading, please rate this app!"
+  }
+}
